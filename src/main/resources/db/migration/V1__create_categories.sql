@@ -1,0 +1,1 @@
+create table categories(id bigint auto_increment,description varchar(255), primary key(id) );

@@ -1,0 +1,62 @@
+GET http://localhost:8080/api/todos/user/user1/category/1
+Accept: application/json
+Authorization: Basic user1 user1
+
+###
+POST http://localhost:8080/api/todos/user/user1/category
+Content-Type: application/json
+Authorization: Basic user1 user1
+
+{
+  "description" : ""
+}
+###
+POST http://localhost:8080/api/todos/user/user1/category/83
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic user1 user1
+
+{
+  "description" : ""
+}
+###
+POST http://localhost:8080/api/todo/6
+Content-Type: application/json
+Accept: application/json
+
+{
+  "description" : "Learn C#"
+}
+###
+PUT http://localhost:8080/api/todo/todo/17
+Content-Type: application/json
+Accept: application/json
+
+{
+        "description": "Learning Java",
+        "done": "true"
+}
+###
+GET http://localhost:8080/api/todos/user/todos/1
+Accept: application/json
+Authorization: Basic dXNlcjE6dXNlcjE=
+###
+PUT http://localhost:8080/api/todo/change-done/7
+Content-Type: application/json
+Accept: application/json
+
+{
+  "isDone" : "true"
+}
+
+###
+DELETE http://localhost:8080/api/todo/delete/18
+
+###
+PUT http://localhost:8080/api/todo/change-name/17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "description": "Learning Java2"
+}
